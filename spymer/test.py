@@ -5,8 +5,8 @@ class Test_1(TaskSet):
         {
         "name": "Silence of the Lambs",
         "phone": "Thriller Book",
-        "email": 1
-        "form_name": "Гарантии результата"
-        "from_page": https://sukhoff.com/
+        "email": 1,
+        "form_name": "Гарантии результата",
+        "from_page": "https://sukhoff.com/"
         }
         )
