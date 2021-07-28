@@ -7,10 +7,11 @@ from locust.web import app
 from src import report
 app.add_url_rule('/htmlreport', 'htmlreport', report.download_report)
 
-class Test_1(TaskSet):
-    @task(1)
+class SimpleBehavior(TaskSet):
+
+    @task
     def users(self):
-        response = self.client.post("/posts", data=
+        response = self.client.post("/sendmail.php", data=
         {
         "name": "Silence of the Lambs",
         "phone": "Thriller Book",
