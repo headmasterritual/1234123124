@@ -10,7 +10,7 @@ app.add_url_rule('/htmlreport', 'htmlreport', report.download_report)
 class SimpleBehavior(TaskSet):
 
     @task
-    def users(self):
+    def index(self):
         response = self.client.post("/sendmail.php", data=
         {
         "name": "Silence of the Lambs",
