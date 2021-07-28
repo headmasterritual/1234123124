@@ -20,3 +20,8 @@ class SimpleBehavior(TaskSet):
         "from_page": "https://sukhoff.com/"
         }
         )
+        
+class MyLocust(HttpLocust):
+    task_set = SimpleBehavior
+    min_wait = 0
+    max_wait = 0
